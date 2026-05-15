@@ -15,10 +15,11 @@ npm run dev
 
 ## Deploy to GitHub Pages
 
-1. **Settings → Pages → Build and deployment**
+1. **Settings → Pages → Build and deployment** (required for styling to work)
    - **Source:** Deploy from a branch
-   - **Branch:** `main` → **`/docs`**
-   - Save (the workflow builds the site into the `docs/` folder on each push)
+   - **Branch:** **`gh-pages`** → **`/ (root)`**
+   - Do **not** use `main` — that serves raw source files without CSS/JS.
+   - Save, then wait 1–2 minutes and hard-refresh the site (Ctrl+F5).
 2. Add repository secrets (**Settings → Secrets and variables → Actions**):
    - `VITE_EMAILJS_SERVICE_ID`
    - `VITE_EMAILJS_TEMPLATE_ID`
