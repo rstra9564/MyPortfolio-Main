@@ -15,7 +15,10 @@ npm run dev
 
 ## Deploy to GitHub Pages
 
-1. **Settings → Pages → Build and deployment → Source:** GitHub Actions
+1. **Settings → Pages → Build and deployment**
+   - **Source:** Deploy from a branch
+   - **Branch:** `gh-pages` → `/ (root)`
+   - Save (the `gh-pages` branch is created automatically on the first successful workflow run)
 2. Add repository secrets (**Settings → Secrets and variables → Actions**):
    - `VITE_EMAILJS_SERVICE_ID`
    - `VITE_EMAILJS_TEMPLATE_ID`
